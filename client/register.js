@@ -7,9 +7,11 @@ const password = document.getElementById("password");
 
 
 form.addEventListener("submit", (e)=>{
-
-    const valid = validateInputs(email, fName, lName, password);
+    
     e.preventDefault();
+    const valid = validateInputs(email, fName, lName, password);
+    sendEmail();
+    
 
     if(!valid){
 
@@ -86,4 +88,12 @@ function validateInputs(email, fName, lName, password){
 
     return valid;
     
+}
+
+function sendEmail(){
+    var body = "You sign up successfully! Enjoy!";
+    var subject = "Verification email"
+    const targetEmail = email.value;
+    //Add your email
+    window.location.href = "mailto:" + targetEmail + "?from=#<your email>#&subject=" + subject + "&body=" + body;
 }
