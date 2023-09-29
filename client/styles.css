@@ -18,7 +18,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center contents horizontally */
+    align-items: center; 
 }
 
 h2 {
@@ -28,12 +28,12 @@ h2 {
 
 .signupForm, .loginForm{
     margin-top: 20px;
-    width: 100%; /* Ensure the form takes the full container width */
+    width: 100%; 
 }
 
 .input-group {
     margin-bottom: 20px;
-    width: 100%; /* Make input groups take the full container width */
+    width: 100%; 
 }
 
 .label {
@@ -42,7 +42,7 @@ h2 {
     color: #333;
     font-weight: bold;
     font-size: 16px;
-    text-align: left; /* Left-align labels */
+    text-align: left; 
 }
 
 .input {
@@ -57,7 +57,7 @@ h2 {
 .error-message {
     color: #ff0000;
     font-size: 14px;
-    text-align: left; /* Left-align error messages */
+    text-align: left; 
 }
 
 button[type="submit"] {
