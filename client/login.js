@@ -14,11 +14,11 @@ form.addEventListener("submit", (e)=>{
                     console.log("Login successfully!");
                     match = true;
                     window.location.href = "./secret.html";
-                }else{
-                    alert("Wrong email or password");
-                    window.location.href = "./login.html";
-                    break;
                 }
+            }
+            if(!match){
+                alert("Wrong email or password");
+                window.location.href = "./login.html";
             }
 
         });
